@@ -2,7 +2,8 @@ import Image from 'next/image';
 
 export default function Contact() {
   return (
-    <div className="max-w-4xl mx-auto px-4 py-16">
+    <section className="bg-gradient-to-br from-black to-gray-800 min-h-screen">
+    <div className="max-w-4xl mx-auto px-4 py-20">
       <div className="text-center">
       <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-200 mb-4 lg:mb-6">Get In <span className="text-purple-600">Touch</span></h1>
       <p className="text-xl text-gray-400 mb-12">
@@ -112,5 +113,6 @@ export default function Contact() {
         </div>
       </div>
     </div>
+    </section>
   );
 }
