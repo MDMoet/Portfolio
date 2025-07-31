@@ -76,7 +76,7 @@ export default function Navigation() {
           </div>
 
           {/* Mobile menu button */}
-          <div className="md:hidden flex items-center">
+          <div className="md:hidden z-100 flex items-center">
             <button
               onClick={toggleMenu}
               className="text-gray-400 hover:text-gray-100 focus:outline-none focus:text-gray-100 transition-colors z-50 relative"
