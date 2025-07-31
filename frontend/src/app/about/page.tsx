@@ -6,7 +6,7 @@ import SkillsBox from "../components/SkillsBox";
 export default function About() {
   return (
     <div className="min-h-screen">
-    <section className="relative bg-gradient-to-br from-black to-gray-800 py-20 min-h-screen">
+    <section className="relative bg-gradient-to-br from-black to-gray-800 py-20">
   <div className="relative max-w-6xl mx-auto px-4">
     <div className="text-center mb-8 lg:mb-16">
       <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-200 mb-4 lg:mb-6">
