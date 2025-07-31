@@ -1,0 +1,15 @@
+FROM python:3.11-slim
+
+WORKDIR /app
+
+# Install pip and required system tools (optional: git if needed)
+RUN apt update && apt install -y gcc libffi-dev python3-dev git
+
+COPY requirements.txt .
+
+# Use pip to install dependencies
+RUN pip install --no-cache-dir -r requirements.txt
+
+COPY . .
+
+CMD ["python", "main.py"]
