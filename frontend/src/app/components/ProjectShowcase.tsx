@@ -12,6 +12,7 @@ type ProjectProps = {
 
 export default function ProjectShowcase({ new: isNew, title, description, tech, link }: ProjectProps) {
   return (
+    <Link href={link} className="group">
     <div 
       className="group bg-gray-800 rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-700"
     >
@@ -59,5 +60,6 @@ export default function ProjectShowcase({ new: isNew, title, description, tech, 
         </Link>
       </div>
     </div>
+    </Link>
   );
 }
