@@ -110,7 +110,7 @@ export default function Navigation() {
 
         {/* Mobile Navigation Menu */}
         {isMenuOpen && (
-          <div className="fixed top-0 right-0 h-full w-1/3 bg-gradient-to-br from-gray-900 to-black shadow-lg z-50 md:hidden transform transition-transform duration-300 ease-in-out">
+          <div className="fixed top-0 right-0 h-full w-5/9 bg-gradient-to-br from-gray-900 to-black shadow-lg z-50 md:hidden transform transition-transform duration-300 ease-in-out">
             <div className="flex flex-col h-full pt-20 px-6">
               <div className="space-y-6">
                 <Link href="/" onClick={closeMenu} className={getLinkClasses('/', true)}>
