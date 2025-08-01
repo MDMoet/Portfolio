@@ -65,8 +65,8 @@ export default function ProjectDetail({ params }: { params: { slug: string } }) 
   
   return (
        <div className="min-h-screen">
-    <section className="relative bg-gradient-to-br from-black to-gray-800 min-h-screen py-5">
-    <div className="max-w-4xl mx-auto px-4">
+    <section className="relative bg-gradient-to-br from-black min-h-screen to-gray-800 py-5">
+    <div className="max-w-4xl mx-auto py-20 px-4">
       <Link href="/projects" className="text-purple-600 hover:text-purple-800 mb-8 inline-block">
         ← Back to Projects
       </Link>
