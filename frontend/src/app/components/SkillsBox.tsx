@@ -12,7 +12,7 @@ export default function SkillsBox({ color, text, size = 'medium' }: SkillsBoxPro
   };
 
   return (
-    <span className={`bg-gradient-to-r from-${color}-500 to-${color}-800 text-white ${sizeClasses[size]} rounded-lg font-medium`}>
+    <span className={`flex-none bg-gradient-to-r from-${color}-500 to-${color}-800 text-white ${sizeClasses[size]} rounded-lg font-medium`}>
       {text}
     </span>
   );

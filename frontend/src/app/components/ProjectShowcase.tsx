@@ -44,20 +44,20 @@ export default function ProjectShowcase({ new: isNew, title, description, tech, 
           {description}
         </p>
         
-        <div className="flex flex-wrap gap-2 mb-4">
-          {tech.map((skill) => (
-           <SkillsBox key={skill} size="small" color="red" text={skill} />))}
-        </div>
+     <div className="flex flex-nowrap overflow-x-auto scrollbar-thin items-start gap-2 mb-4 pb-2">
+  {tech.map((skill) => (
+    <SkillsBox key={skill} size="small" color="red" text={skill} />
+  ))}
+</div>
         
-        <Link 
-          href={link} 
+        <p
           className="inline-flex items-center text-purple-400 hover:text-purple-300 font-medium text-sm group-hover:translate-x-1 transition-all duration-300"
         >
           View Details 
           <svg className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
           </svg>
-        </Link>
+        </p>
       </div>
     </div>
     </Link>
